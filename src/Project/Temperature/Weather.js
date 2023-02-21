@@ -29,13 +29,13 @@ export default function Weather() {
         Climate
       </Button>
       <br />
-      {change == "coordinates" ? <Temp /> : null} <br />
+      {change === "coordinates" ? <Temp /> : null} <br />
       <br />
       <p>
         If you want to know the Temperature of your location <br /> <br />
         <span style={{ color: "#47CF73", fontSize: "16px" }}>
           Click this button!
-        </span>{" "}
+        </span>
       </p>
       <Button
         variant="contained"
@@ -44,7 +44,7 @@ export default function Weather() {
       >
         Location
       </Button>
-      {change == "location" ? <Tempp /> : null}
+      {change === "location" ? <Tempp /> : null}
     </>
   );
 }
