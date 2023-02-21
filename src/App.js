@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Theme from "./Project/Theme";
+import Weather from "./Project/Temperature/Weather";
+import Navbar from "./Navbar";
+import Profile from "./Project/Profile";
+import Todo from "./Project/Todo";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: "white" }}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path="/profile" element={<Profile />}></Route>
+
+          <Route exact path="/weather" element={<Weather />}></Route>
+
+          <Route exact path="/theme" element={<Theme />}></Route>
+
+          <Route exact path="/todo" element={<Todo />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
