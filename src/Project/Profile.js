@@ -50,7 +50,7 @@ function Profile() {
           in User Interface. Now, I'm Working at{" "}
           <span style={{ color: "#33AC6E", fontSize: "20px" }}>
             Learny Technologies{" "}
-          </span>{" "}
+          </span>
           as a Web Developer
           <br />
         </CardContent>

@@ -7,7 +7,7 @@ export default function Weather() {
   const [change, setChange] = useState("");
 
   return (
-    <>
+    <div style={{marginLeft:"20px"}}>
       <br />
       <span style={{ color: "#9B2A65", fontSize: "19px" }}>
         <marquee direction="" scrollamount="10">
@@ -45,6 +45,6 @@ export default function Weather() {
         Location
       </Button>
       {change === "location" ? <Tempp /> : null}
-    </>
+    </div>
   );
 }

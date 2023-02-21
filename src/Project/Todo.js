@@ -82,7 +82,6 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        {/* <h1 className="text-center mb-4">Todo List</h1> */}
         <FormTodo addTodo={addTodo} />
         <div>
           {todos.map((todo, index) => (
