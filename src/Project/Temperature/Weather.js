@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Temp from "./Temp";
 import Tempp from "./Tempp";
 import Button from "@material-ui/core/Button";
-import RouteChangeTracker from "../../../RouteChangeTracker";
+import RouteChangeTracker from "../../RouteChangeTracker";
 
 export default function Weather() {
   const [change, setChange] = useState("");
