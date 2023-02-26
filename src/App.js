@@ -5,10 +5,15 @@ import Profile from "./Project/Profile";
 import Todo from "./Project/Todo";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ReactGA from 'react-ga';
+import RouteChangeTracker from "../RouteChangeTracker";
 
+const TRACKING_ID = "UA-251235741-1";
+ReactGA.initialize(TRACKING_ID);
 function App() {
   return (
     <div style={{ backgroundColor: "white" }}>
+      <RouteChangeTracker/>
       <Router>
         <Navbar />
         <Routes>
