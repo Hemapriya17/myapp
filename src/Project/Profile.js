@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import RouteChangeTracker from "../../RouteChangeTracker";
 
 function Profile() {
   return (
@@ -14,6 +15,7 @@ function Profile() {
         backgroundColor: "#F8E2E7",
       }}
     >
+      <RouteChangeTracker/>
       <Card
         style={{
           height: "300px",

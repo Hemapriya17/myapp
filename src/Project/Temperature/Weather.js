@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import Temp from "./Temp";
 import Tempp from "./Tempp";
 import Button from "@material-ui/core/Button";
+import RouteChangeTracker from "../../../RouteChangeTracker";
 
 export default function Weather() {
   const [change, setChange] = useState("");
 
   return (
     <div style={{marginLeft:"20px"}}>
+      <RouteChangeTracker/>
       <br />
       <span style={{ color: "#9B2A65", fontSize: "19px" }}>
         <marquee direction="" scrollamount="10">
